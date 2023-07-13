@@ -12,6 +12,7 @@ We will first create the Montreal OU for our main office then create Sub-OUs for
    - In Server Manager under Tools: open Active Directory Users and Computers.
    - Right-click on the domain name "acme.com" and select "New" -> "Organizational Unit".
    - Enter "Montreal" as the name for the OU and click "OK" to create it.
+     
      ![image](https://github.com/gf500/AD-OUs-Users-PCs/assets/121585575/1d275b3c-2e39-4ded-bc13-a6b47334a296)
 
 2. Creating Sub-OUs for Montreal:
@@ -49,9 +50,11 @@ We will create some user accounts to populate the OUs, we will keep it simple fo
 
 3. Admins and Service Accounts
    - We will also create a user account for a domain admin and a workstation account, adding the "da" and "wa" prefix to the logon names to distinguish their roles.
+     
 ![image](https://github.com/gf500/AD-OUs-Users-PCs/assets/121585575/1bd8e53a-abef-4e19-b22a-d8fbf8281c8c)
 
    - We also created in the Service Accounts OU a PC joiner user we will be using to join workstations to the domain with a descriptive name: srvc-pcjoin.
+     
 ![image](https://github.com/gf500/AD-OUs-Users-PCs/assets/121585575/49bab1c9-e4ed-4f9b-a9f4-e29cc4f12954)
 
 Currently, all our departments have at least one user and we also have some accounts to administering our domain, further on we will be using powershell scripts to populate our OUs more extensively.
@@ -63,12 +66,18 @@ To make it easier to add workstations to our domain we've elected to use a singl
 1. Delegation of Control Wizard
    - Still in Active Directory Users and Computers, right-click on acme.com and select "Delegate Control".
    - The Delegation of Control Wizard will open. Click "Next" to proceed.
+     
 ![image](https://github.com/gf500/AD-OUs-Users-PCs/assets/121585575/7a7121ce-76ff-4c5d-bc10-96f5eb93ddd1)
+
    - On the Users or Groups page, click "Add" to select the user "srvc-pcjoin" from the directory.
+     
 ![image](https://github.com/gf500/AD-OUs-Users-PCs/assets/121585575/b8dfba29-e7b7-436d-9cd1-84efa184434f)
+
    - Click "Next" to proceed.
    - On the Tasks to Delegate page, select "Join a computer to the domain" under "Delegate the following common tasks" and click "Next."
+     
 ![image](https://github.com/gf500/AD-OUs-Users-PCs/assets/121585575/de3faa52-b533-4f15-85f8-8f5ff43eb413)
+
    - Review the settings on the Summary page and click "Finish" to complete the delegation process.
 
 
