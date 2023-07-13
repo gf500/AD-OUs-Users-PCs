@@ -1,0 +1,5 @@
+Create User
+```
+$secpass = Read-Host "Password" -AsSecureString
+New-ADUser -Name "BLACK Joe" -SamAccountName "jblack" -UserPrincipalName "jblack@acme.com" -AccountPassword $secpass -Path "OU=IT,OU=Employees,OU=Montreal,DC=acme,DC=com" -Enabled $true
+```
