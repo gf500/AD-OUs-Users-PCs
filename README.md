@@ -41,13 +41,16 @@ We will create some user accounts to populate the OUs, we will keep it simple fo
    - Still in the Active Directory Users and Computers management console, locate the Organizational Unit (OU) corresponding to the department you want to create a user account for.
    - Right-click on the OU, select "New," and choose "User."
 2. Naming Users
-   - For employee users we will follow a simple convention of _firstname.lastname_.
+   - For employee users's logon we will use their first letter of their first name followed by their last name.
+   - We will capitalize their last name to make the distinction.
 
-![image](https://github.com/gf500/AD-OUs-Users-PCs/assets/121585575/32de8be7-e568-4083-8698-8354720850ee)
+![image](https://github.com/gf500/AD-OUs-Users-PCs/assets/121585575/9852626c-1256-4f86-bd97-9433a35da84e)
+
 
 3. Admins and Service Accounts
    - We will also create a user account for a domain admin and a workstation account, adding the "da" and "wa" prefix to the logon names to distinguish their roles.
-![image](https://github.com/gf500/AD-OUs-Users-PCs/assets/121585575/7bdbccda-1391-4b8e-902a-bd0c407f9e92)
+![image](https://github.com/gf500/AD-OUs-Users-PCs/assets/121585575/1bd8e53a-abef-4e19-b22a-d8fbf8281c8c)
+
    - We also created in the Service Accounts OU a PC joiner user we will be using to join workstations to the domain with a descriptive name: srvc-pcjoin.
 ![image](https://github.com/gf500/AD-OUs-Users-PCs/assets/121585575/49bab1c9-e4ed-4f9b-a9f4-e29cc4f12954)
 
