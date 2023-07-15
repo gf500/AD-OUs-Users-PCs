@@ -21,6 +21,7 @@ Import-Csv names.csv | foreach {$name = "$($_.LastName) $($_.FirstName)"
  -AccountPassword $secpass -Path "cn=Users,dc=acme,dc=com" 
  -Enabled:$true
 }
+```
 
 Modify User Attribute
 ```
