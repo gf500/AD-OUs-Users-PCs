@@ -22,3 +22,8 @@ Import-Csv names.csv | foreach {$name = "$($_.LastName) $($_.FirstName)"
  -Enabled:$true
 }
 
+Modify User Attribute
+```
+Set-ADUser -Identity "CN=BLACK Joe,OU=IT,OU=Employees,OU=Montreal,DC=Acme,DC=com" -OfficePhone "987-6541"
+```
+
