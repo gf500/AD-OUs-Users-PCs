@@ -13,7 +13,7 @@ We will first create the Montreal OU for our main office then create Sub-OUs for
    - Right-click on the domain name "acme.com" and select "New" -> "Organizational Unit".
    - Enter "Montreal" as the name for the OU and click "OK" to create it.
      
-     ![image](https://github.com/gf500/AD-OUs-Users-PCs/assets/121585575/1d275b3c-2e39-4ded-bc13-a6b47334a296)
+![image](https://github.com/gf500/AD-OUs-Users-PCs/assets/121585575/1d275b3c-2e39-4ded-bc13-a6b47334a296)
 
 2. Creating Sub-OUs for Montreal:
    - Right-click on the Montreal OU and select "New" -> "Organizational Unit".
